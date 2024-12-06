@@ -11,6 +11,7 @@ export const ChainToggle = (props:IChainToggleProps) => {
     <div className="w-full  px-2 py-8">
           <Button className="mx-2 shadow-xl dark:shadow-slate-900 text-lg" onClick={() => handleChain("Solana")} variant="outline" size="lg" >Solana</Button>
         <Button className="mx-2 shadow-xl dark:shadow-slate-900 text-lg" onClick={() => handleChain("Ethereum")} variant="outline" size="lg" >Ethereum</Button>  
+        <Button className="mx-2 shadow-xl dark:shadow-slate-900 text-lg" onClick={() => handleChain("Aptos")} variant="outline" size="lg" >Aptos</Button>  
     </div>
   )
 }
