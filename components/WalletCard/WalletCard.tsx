@@ -1,5 +1,5 @@
 
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useState } from 'react'
 import { Card, CardContent, CardHeader } from '../ui/card'
 import { Circle, CopyCheckIcon, CopyIcon, Eye, EyeClosed } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';

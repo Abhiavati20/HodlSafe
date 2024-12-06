@@ -2,7 +2,7 @@
 import { ChainToggle } from "@/components/ChainToggle/ChainToggle";
 import Navbar from "@/components/Navbar/Navbar";
 import WalletGenerator from "@/components/WalletGenerator/WalletGenerator";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [chain, setChain] = useState<string>("");
