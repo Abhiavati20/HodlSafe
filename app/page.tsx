@@ -20,7 +20,7 @@ export default function Home() {
           </div>}
 
           {/* toggle switch buttons between solana and ethereum */}
-          {chain === "" ? <ChainToggle handleChain={handleChain} /> : <WalletGenerator chain={chain} />}
+          {chain === "" ? <ChainToggle handleChain={handleChain} /> : <WalletGenerator chain={chain} handleChain={handleChain}/>}
           {/* show seed */}
           {/* show balance if possible */}
           {/* public key and private key */}

@@ -7,7 +7,7 @@ interface IWalletCardProps {
     publicKey: string;
     walletIndex: number,
     privateKey: string,
-    balance:number
+    balance:string
 }
 
 export const WalletCard = (props:IWalletCardProps) => {
@@ -47,10 +47,10 @@ export const WalletCard = (props:IWalletCardProps) => {
 
     
     return (
-      <Card key={walletIndex} className="p-2 m-2 w-2/3 mx-auto">
+      <Card key={walletIndex} className="m-2 w-full mx-auto">
           <CardHeader>
                 #{walletIndex + 1}
-                <span className="font-semibold"> Balance: {balance} SOL</span>
+                <span className="font-semibold"> Balance: {balance}</span>
           </CardHeader>
             <CardContent className="flex flex-col items-center justify-start w-full ">
             
