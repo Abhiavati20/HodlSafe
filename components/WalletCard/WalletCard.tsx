@@ -54,19 +54,19 @@ export const WalletCard = (props:IWalletCardProps) => {
           </CardHeader>
             <CardContent className="flex flex-col items-center justify-start w-full ">
             
-              <div onClick={handlePublicKeyCopy} className="flex flex-col w-full justify-start gap-4 p-2 rounded-md cursor-pointer text-black hover:border-2">
+              <div onClick={handlePublicKeyCopy} className="flex flex-col w-full justify-start gap-4 p-2 rounded-md cursor-pointer text-black dark:bg-slate-500 shadow-lg dark:text-white my-2 hover:border-2">
                     <span className="text-2xl font-semibold mr-2">Public Key</span>
                     <span  className="cursor-pointer flex w-full justify-between items-center">
-                        <span className="text-lg">{publicKey}</span>
+                        <span className="text-2xl">{publicKey}</span>
                         {!copied ? <CopyIcon size={20} /> : <CopyCheckIcon size={20} />}
                     </span>
               </div>
-              <div  className="flex flex-col w-full justify-start  gap-4 p-2 rounded-md cursor-pointer text-black hover:border-2">
+              <div  className="flex flex-col w-full justify-start  gap-4 p-2 rounded-md cursor-pointer text-black dark:bg-slate-500 shadow-lg dark:text-white my-2  hover:border-2">
                     <span className="text-2xl font-semibold mr-2">Private Key</span>
-                    <span className="flex w-full justify-between items-center" >
+                    <span className="flex w-full justify-between items-center text-2xl" >
                         <span className="flex">{
                             !showKey ?
-                                Array.from({ length: privateKey.length }).map((_, index) => <Circle key={index} size={8} fill="#000" />)
+                                Array.from({ length: privateKey.length }).map((_, index) => <span key={index} className="font-medium ">*</span>)
                             : hexString
                             }</span>
                         {!showKey ? <EyeClosed onClick={handleShowPrivateKey} size={20} /> : <Eye onClick={handleShowPrivateKey} size={20} />}
