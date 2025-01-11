@@ -33,7 +33,7 @@ const MnemonicComponent = (props: IMnemonicComponentProps) => {
           {showSeed &&
                 <>
                     <div className='w-full my-4 mx-auto rounded-md flex flex-wrap p-2 gap-2 items-center justify-evenly'>
-                        {mnemonic.split(" ").map((word, index) => <div key={index} className="p-5 w-1/4 text-xl bg-slate-200 rounded-md dark:bg-white text-black">{word}</div>)}
+                  {mnemonic.split(" ").map((word, index) => <div key={index} className="p-5 w-1/4 text-xl bg-slate-200 rounded-md dark:bg-white text-black">{index} {word}</div>)}
                     </div>
                     <span className="flex w-full justify-end" onClick={handleCopy}>
                         <Button size="lg" variant="ghost" >

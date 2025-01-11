@@ -11,7 +11,8 @@ import {clusterApiUrl, Connection, Keypair, LAMPORTS_PER_SOL, PublicKey} from "@
 import { WalletCard } from '../WalletCard/WalletCard';
 import bs58 from "bs58"
 import { ChainEnum } from '@/lib/utils';
-import {ethers} from "ethers"
+import { ethers } from "ethers";
+
 interface IWalletGeneratorProps {
     chain: string;
     handleChain(chain: string): void;
